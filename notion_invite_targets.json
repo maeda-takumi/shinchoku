@@ -1,75 +1,68 @@
 {
-  "week1_week2": {
-    "spreadsheet_key": "1IBGD-u-qxl7UF7WlXCmM9a_nT6ZE8UtmyndaLW1yJ4w",
-    "sheet_name": "シート1",
-    "notion_page_url": "https://www.notion.so/AI-Week2-ChatGPT-2a48252adfa7804dac3bd02f9418a375",
-    "email_column": 12,
-    "status_column": 13
-  },
-  "week2_week3": {
+  "week2": {
     "spreadsheet_key": "1jAwXvg8gX3rLYa-OYyHhCaLXUX1EhjLyaGlgh_4BGoE",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week3-Canva-2a48252adfa780d5b950daf880bff65d",
     "email_column": 12,
     "status_column": 13
   },
-  "week3_week4": {
+  "week3": {
     "spreadsheet_key": "1Uth0PaAYnfh67f8xw3Spdrbly8FzMUdgAKAG_lsj03I",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week4-Canva-2a98252adfa7804288e9f9a70fb51560",
     "email_column": 11,
     "status_column": 12
   },
-  "week4_week5": {
+  "week4": {
     "spreadsheet_key": "1Db9uO1-3E-LoF7uRmhm4jw39Pyl8U_ePeieA5bJjvMU",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week5-Notion-2a98252adfa78023a320ffe0ff1ad5ca",
     "email_column": 11,
     "status_column": 12
   },
-  "week5_week6": {
+  "week5": {
     "spreadsheet_key": "11B2tsJzlc6wk5Y2unIaa_nBVEqbE0dMidrLBanj9qB4",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week6-Notion-2a98252adfa780c48171e18ffa757a65",
     "email_column": 11,
     "status_column": 12
   },
-  "week6_week7": {
+  "week6": {
     "spreadsheet_key": "1HnDAfcnbZKCAqzQLuhLd-3cIRdeKrNuCV5iwNjrGUjQ",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week7-CapCut-2a98252adfa780be8a61e9efea85e0a2",
     "email_column": 11,
     "status_column": 12
   },
-  "week7_week8": {
+  "week7": {
     "spreadsheet_key": "1-Q_oXmW7T8ZNf5FsV-DiF_kHNU1s2hStDFZhJE62yOY",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week8-CapCut-2aa8252adfa780ec96ebc9501bcebaa5",
     "email_column": 11,
     "status_column": 12
   },
-  "week8_week9": {
+  "week8": {
     "spreadsheet_key": "1Ik6tO0A61UnHK7JbcXTcjbBPmvmsmoUwP89T4lwBB5Q",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week9-2aa8252adfa780fcafb4e2f5fe23d07b",
     "email_column": 12,
     "status_column": 13
   },
-  "week9_week10": {
+  "week9": {
     "spreadsheet_key": "1ZRhUvrefR6s9osmZ4tGyEbli6q3CYkYE-97J2NN5se0",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week10-2aa8252adfa780c7a77fc855ae4fd884",
     "email_column": 11,
     "status_column": 12
   },
-  "week10_week11": {
+  "week10": {
     "spreadsheet_key": "1BEWGjd534yllZaCeON7YrkILBWyjNUs1bvy31h7O0Y0",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week11-2aa8252adfa780ec8d05cfdd882e0497",
     "email_column": 11,
     "status_column": 12
   },
-  "week11_week12": {
+  "week11": {
     "spreadsheet_key": "1BnpzEJJJ_o8BVyR8DQ_aEC6FIC3GE5JF03r0fuFDNk8",
     "sheet_name": "シート1",
     "notion_page_url": "https://www.notion.so/AI-Week12-2ab8252adfa780929385ec9c8e4e2a1a",
