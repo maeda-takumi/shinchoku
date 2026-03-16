@@ -83,5 +83,12 @@
     "notion_page_url": "https://www.notion.so/AI-Week12-2ab8252adfa780929385ec9c8e4e2a1a",
     "email_column": 12,
     "status_column": 13
+  },
+  "week12": {
+    "spreadsheet_key": "1TZ1pYTjgRwuLcGWMj-2FfWouK46w7lJiu-fhIwWOuig",
+    "sheet_name": "シート1",
+    "notion_page_url": "https://www.notion.so/AI-Week13-2ab8252adfa780929385ec9c8e4e2a1a",
+    "email_column": 12,
+    "status_column": 13
   }
 }
