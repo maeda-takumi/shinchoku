@@ -1,12 +1,4 @@
 {
-  "week1": {
-    "spreadsheet_key": "1OZMS0_7l4oum7JtIZR2WKoqb8-YNB4cBffrD9dcMGjc",
-    "sheet_name": "Week1送信用",
-    "notion_page_url": "https://www.notion.so/AI-Week1-ChatGPT-2a38252adfa7801b8554ff5febd9d378",
-    "email_column": 3,
-    "status_column": 5
-  },
-
   "week1_week2": {
     "spreadsheet_key": "1IBGD-u-qxl7UF7WlXCmM9a_nT6ZE8UtmyndaLW1yJ4w",
     "sheet_name": "シート1",
