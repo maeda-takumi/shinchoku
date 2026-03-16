@@ -40,16 +40,32 @@ def init_db(conn: sqlite3.Connection) -> None:
         """
     )
 
+    # 再取り込み時に同一ユーザー行を更新できるよう、重複行を整理して一意制約を付与する。
+    conn.execute(
+        f"""
+        DELETE FROM {TABLE_NAME}
+        WHERE id NOT IN (
+            SELECT MAX(id)
+            FROM {TABLE_NAME}
+            GROUP BY curriculum, line_name
+        )
+        """
+    )
+    conn.execute(
+        f"CREATE UNIQUE INDEX IF NOT EXISTS idx_{TABLE_NAME}_curriculum_line_name "
+        f"ON {TABLE_NAME} (curriculum, line_name)"
+    )
 
-def insert_rows(
+def upsert_rows(
     conn: sqlite3.Connection,
     curriculum: str,
     rows: list[list[str]],
     line_name_column: int,
     answer_date_column: int,
 ) -> int:
-    inserted = 0
-    for row in rows:
+    upserted = 0
+    # 1 行目はヘッダーのため取り込み対象外。
+    for row in rows[1:]:
         line_name = row[line_name_column - 1].strip() if len(row) >= line_name_column else ""
         answer_date = row[answer_date_column - 1].strip() if len(row) >= answer_date_column else ""
 
@@ -57,12 +73,17 @@ def insert_rows(
             continue
 
         conn.execute(
-            f"INSERT INTO {TABLE_NAME} (line_name, curriculum, answer_date) VALUES (?, ?, ?)",
+            f"""
+            INSERT INTO {TABLE_NAME} (line_name, curriculum, answer_date)
+            VALUES (?, ?, ?)
+            ON CONFLICT(curriculum, line_name)
+            DO UPDATE SET answer_date = excluded.answer_date
+            """,
             (line_name, curriculum, answer_date),
         )
-        inserted += 1
+        upserted += 1
 
-    return inserted
+    return upserted
 
 
 def load_targets(path: Path) -> dict[str, dict[str, str]]:
@@ -133,7 +154,7 @@ def main() -> None:
                 print(f"[ERROR] {curriculum}: シート取得失敗 ({e})")
                 continue
 
-            inserted = insert_rows(
+            inserted = upsert_rows(
                 conn,
                 curriculum=curriculum,
                 rows=rows,
